@@ -52,7 +52,8 @@ eight.start(username, password, pollTime)
 
 eight.on('updated', (result) => {
     logging.debug('eight updated')
-
+    if (_.isNil(result)) return
+    
     Object.keys(result).forEach(key => {
         const value = result[key]
         logging.debug('   base: ' + key + ': ' + value)
