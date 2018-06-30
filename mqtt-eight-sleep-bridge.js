@@ -1,10 +1,8 @@
 // Requirements
 const mqtt = require('mqtt')
 const _ = require('lodash')
-
 const logging = require('homeautomation-js-lib/logging.js')
 const health = require('homeautomation-js-lib/health.js')
-
 const eight = require('./lib/eight_sleep.js')
 
 require('homeautomation-js-lib/mqtt_helpers.js')
