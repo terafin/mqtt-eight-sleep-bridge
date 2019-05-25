@@ -4,8 +4,7 @@ const _ = require('lodash')
 const logging = require('homeautomation-js-lib/logging.js')
 const health = require('homeautomation-js-lib/health.js')
 const eight = require('./lib/eight_sleep.js')
-
-require('homeautomation-js-lib/mqtt_helpers.js')
+const mqtt_helpers = require('homeautomation-js-lib/mqtt_helpers.js')
 
 const username = process.env.USERNAME
 const password = process.env.PASSWORD
@@ -44,7 +43,7 @@ var disconnectedEvent = function() {
 }
 
 // Setup MQTT
-var client = mqtt.setupClient(connectedEvent, disconnectedEvent)
+var client = mqtt_helpers.setupClient(connectedEvent, disconnectedEvent)
 
 eight.start(username, password, pollTime)
 
