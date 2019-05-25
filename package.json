@@ -11,7 +11,7 @@
         "start": "node mqtt-eight-sleep-bridge.js"
     },
     "dependencies": {
-        "homeautomation-js-lib": "git://github.com/terafin/homeautomation-js-lib.git",
+        "homeautomation-js-lib": "git+https://gitlab.siliconspirit.net/home/homeautomation-js-lib.git",
         "lodash": "latest",
         "request": "latest",
         "repeat": "0.0.6",
