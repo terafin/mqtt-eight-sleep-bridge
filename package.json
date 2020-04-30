@@ -1,24 +1,28 @@
 {
-    "name": "mqtt-eight-sleep-bridge",
-    "version": "0.0.1",
-    "description": "Bridge Eight Sleep HTTP to MQTT",
-    "license": "MIT",
-    "main": "mqtt-eight-sleep-bridge.js",
-    "repository": {
-        "url": "https://github.com/terafin/mqtt-eight-sleep-bridge"
-    },
-    "scripts": {
-        "start": "node mqtt-eight-sleep-bridge.js"
-    },
-    "dependencies": {
-        "homeautomation-js-lib": "https://github.com/terafin/homeautomation-js-lib.git",
-        "lodash": "latest",
-        "request": "latest",
-        "repeat": "0.0.6",
-        "moment": "latest",
-        "mqtt": "latest"
-    },
-    "engines": {
-        "node": ">=4"
-    }
+  "name": "mqtt-eight-sleep-bridge",
+  "version": "0.0.1",
+  "description": "Bridge Eight Sleep HTTP to MQTT",
+  "license": "MIT",
+  "main": "mqtt-eight-sleep-bridge.js",
+  "repository": {
+    "url": "https://github.com/terafin/mqtt-eight-sleep-bridge"
+  },
+  "scripts": {
+    "start": "node mqtt-eight-sleep-bridge.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "homeautomation-js-lib": "https://github.com/terafin/homeautomation-js-lib.git",
+    "lodash": "latest",
+    "request": "latest",
+    "repeat": "0.0.6",
+    "moment": "latest",
+    "mqtt": "latest",
+    "snyk": "^1.316.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "snyk": true
 }
