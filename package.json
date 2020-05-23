@@ -15,7 +15,7 @@
         "lodash": "latest",
         "request": "latest",
         "repeat": "0.0.6",
-        "moment": "latest",
+        "moment": "2.25.1",
         "mqtt": "latest"
     },
     "engines": {
