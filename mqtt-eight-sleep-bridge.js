@@ -27,10 +27,10 @@ if (!_.isNil(shouldRetain)) {
 }
 
 // Config
-const baseTopic = process.env.SLEEP_TOPIC
+const baseTopic = process.env.TOPIC_PREFIX
 
 if (_.isNil(baseTopic)) {
-    logging.warn('SLEEP_TOPIC not set, not starting')
+    logging.warn('TOPIC_PREFIX not set, not starting')
     process.abort()
 }
 
